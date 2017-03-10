@@ -121,7 +121,7 @@
 
                                     </div><!--//section-block-->
                                     <div id="custom-feeds" class="section-block">
-                                        <h6>Custom Feeds</h6>
+                                        <h4>Custom Feeds</h4>
                                         <div class="row">
                                             <div class="col-md-12"><div class="screenshot-holder"><a href="assets/images/screenshots/CustomFeedsFields.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/CustomFeedsFields.jpg" alt="screenshot" width="80%" /></a></div>
                                                 <a href="assets/images/screenshots/CustomFeedsFields.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
@@ -133,126 +133,265 @@
                                             <li>Στην ενότητα παραμετροποίησης υπαρχόντων πεδίων</li>
                                             <li>Στην ενότητα προσθήκης νέου πεδίου</li>
                                         </ul>
-                                        
+
                                         <div id="add-fields" class="section-block">
-                                            Στον παρακάτω πίνακα αναλύεται η χρήση της προσθήκης πεδίου
+                                            <h5>Προσθήκη νέου πεδίου και κατανόησή τους</h5>
+                                            <p>Για την δημιουργία νέου πεδίου που θέλουμε να συμπεριλαμβάνεται στα Feeds του Skroutz και του Best Price πρέπει να ρυθμίσουμε 5 απλές επιλογές.</p>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    
+                                                    
+                                                    
+                                                    <h6>WC Label</h6>
+                                                    <p>
+                                                        <em>Στο συγκεκριμένο πεδίο ορίζεται τό όνομα του πεδίου όπως έχει οριστεί εντός του WooCommerce στο αντίστοιχο Custom Field ή Attribite.</em>
+                                                        </p>
+                                                    <hr>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <p>
+                                                    <strong>Παράδειγμα 1 με Custom Field:</strong> Αν ορίσουμε ένα Custom Field με το όνομα <strong>ISBN</strong> (δεδομένου ότι <strong>τα custom fields ορίζονται με λατινικούς χαρακτήρες</strong>) στο WC Label θα συμπληρώσουμε <strong>ISBN</strong>.
+                                                    </p>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p><em>Το όνομα όπως εμφανίζεται στο custom field του προϊόντος</em></p>
+                                                            <div class="screenshot-holder"><a href="assets/images/screenshots/ISBN.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/ISBN.jpg" alt="screenshot" width="100%" /></a></div>
+                                                            <a href="assets/images/screenshots/ISBN.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p><em>Στο WC Label γράφουμε ISBN (το WC Field Type και Feed Tag κτλ. αναλύονται παρακάτω)</em></p>
+                                                            <div class="screenshot-holder"><a href="assets/images/screenshots/addCustomField.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/addCustomField.jpg" alt="screenshot" width="50%" /></a></div>
+                                                            <a href="assets/images/screenshots/addCustomField.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+
+                                                    
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    <p>    
+                                                        <strong>Παράδειγμα 2 με Attribute:</strong> Αν ορίσουμε ένα Attribute με το όνομα <strong>Χρώμα</strong> και slug <strong>color</strong>(δεδομένου ότι <strong>τα slugs ορίζονται με λατινικούς χαρακτήρες</strong>) στο WC Label θα συμπληρώσουμε <strong><em style="color:red;">pa_</em>color</strong>.
+                                                    </p>
+
+                                                    <div class="callout-block callout-info">
+                                                        <div class="icon-holder">
+                                                            <i class="fa fa-warning"></i>
+                                                        </div><!--//icon-holder-->
+                                                        <div class="content">
+                                                            <h4 class="callout-title">Προσοχή:</h4>
+                                                                <p>Είναι σημαντική η προσθήκη του προθέματος <strong>pa_</strong> μπροστά από το όνομα του slug (χωρίς κενό), όταν το συμπληρώνουμε στο WC Label!</p>
+                                                        </div><!--//content-->
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p><em>Το slug όπως εμφανίζεται στο σχετικό attribute</em></p>
+                                                            <div class="screenshot-holder"><a href="assets/images/screenshots/attrs.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/attrs.jpg" alt="screenshot" width="100%" /></a></div>
+                                                            <a href="assets/images/screenshots/attrs.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p><em>Στο WC Label pa_color</em></p>
+                                                            <div class="screenshot-holder"><a href="assets/images/screenshots/addAttribute.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/addAttribute.jpg" alt="screenshot" width="100%" /></a></div>
+                                                            <a href="assets/images/screenshots/addAttribute.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <p>    
+                                                        <strong>Παράδειγμα 3 με Product Description:</strong>
+                                                        <br>
+                                                        <em> Δεν χρειάζεται να χρησιμοποιηθεί αυτή η επιλογή και υπάρχει προληπτικά σε περίπτωση που ένας από τους
+                                                            δύο παρόχους αλλάξει τον τρόπο που δέχεται την Περιγραφή Προϊόντος - Product Description.</em>
+                                                        <br><br>
+                                                        Σε αντίθεση με τις παραπάνω επιλογές το Product Description έχει προληπτικό ρόλο. <strong>Υπάρχει ήδη στα προκαθορισμένα πεδία του Plugin (που βρίσκονται διαθέσιμα για επεξεργασία)</strong>
+                                                        το πεδίο Product Description και έχει οριστεί με βάση την παρούσα λειτουργεία των Skroutz και BestPrice.<br>
+                                                    </p>
+
+                        
+                                                </li><!-- End of WC Label Description -->
+                                                
+                                                
+                                                
+                                                <li class="list-group-item"><h6>WC Field Type</h6>
+                                                    <p>
+                                                        Υπάρχουν 3 επιλογές για το WC Field Type
+                                                    </p>
+                                                    <div class="screenshot-holder"><a href="assets/images/screenshots/fieldOptions.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/fieldOptions.jpg" alt="screenshot" /></a></div>
+                                                    <br>
+                                                    <ul>
+                                                        <li>Custom Field: <em>Εδώ ορίζεται ότι θα χρησιμοποιηθεί Custom Field για το feed. Ta custom fields δημιουργούνται για τιμές που έχουν <strong>μοναδικότητα</strong> όπως: Serial Numbers, ISBNS, Part Numbers κτλ.</em><br></li>
+                                                        <li>Attibute: <em>Εδώ ορίζεται ότι θα χρησιμοποιηθεί Attribute για το feed. Ta attributes δημιουργούνται για τιμές που έχουν <strong>επανάληψη και κατηγοριοποιούν προϊόντα</strong> όπως: Κατασκευαστή, χρώμα, μέγεθος.</em><br></li>
+                                                        <li>Product Description: <em>Εδώ ορίζεται ότι θα χρησιμοποιηθεί Product Description field για το feed. Ta Product descriptions <strong>μεταφέρουν την περιγραφή του προϊόντος</strong> στο εκάστοτε Skroutz ή BestPrice</em><br></li>
+                                                    </ul>
+                                                        
+                                                    
+                                                </li><!-- End of WC Field Type Description -->
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <li class="list-group-item"><h6>Feed Tag</h6>
+                                                    <p>
+                                                        Στο Feed Tag συμπληρώνουμε το XML Tag που δέχεται ο εκάστοτε πάροχος για να διαχειριστεί το αντίστοιχο tag.<br>
+                                                        <em>Την παρούσα στιγμή BestPrice και Skroutz χρησιμοποιούν τα ίδια Feed Tags</em><br>
+                                                        Δείτε σχετικές λεπτομέρειες στα:<br>
+                                                    <ul>
+                                                        <li><a href="https://developer.skroutz.gr/feedspec/">Skroutz for Developers</a></li>
+                                                        <li><a href="https://merchants.bestprice.gr/assets/bestprice_data_feed_specification.pdf">BestPrice.gr XML Specifications PDF</a></li>
+                                                    </ul>
+                                                    <br>
+                                                    <h6>Παράδειγμα:</h6>
+                                                    Τα XML δέχονται για Attribute χρώματος το εξής XML Tag <code class="code-block">&lt;color&gt; Blue &lt;/color&gt;</code> οπότε
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p><em>Μελετάμε τα XML Feed Tags που χρησιμοποιούν Skroutz και BestPrice αντίστοιχα (color σε αυτή την περίπτωση)</em></p>
+                                                            <div class="screenshot-holder"><a href="assets/images/screenshots/colorXMLskroutz.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/colorXMLskroutz.jpg" alt="screenshot" width="100%" /></a></div>
+                                                            <a href="assets/images/screenshots/colorXMLskroutz.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p><em>Συμπληρώνουμε στο πεδίο Feed Tag αντίστοιχα το όνομα του XML Tag (color σε αυτή την περίπτωση)</em></p>
+                                                            <div class="screenshot-holder"><a href="assets/images/screenshots/addAttribute.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/addAttribute.jpg" alt="screenshot" width="100%" /></a></div>
+                                                            <a href="assets/images/screenshots/addAttribute.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                                        </div>
+                                                    </div>
+                                                </li><!-- End of Feed Tag Description -->
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <li class="list-group-item"><h6>Disable Variations</h6>
+                                                    <p>
+                                                        Επιλέγοντας αυτό το πεδίο καθορίζουμε αν στο XML Feed που θα παρέχουμε, αν επιθυμούμε να περαστούν και οι παραλλαγές του προϊόντως
+                                                        στους καταλόγους Skroutz και BestPrice.<br>
+                                                    </p>
+                                                    <ul>
+                                                        <li><strong>Αν είναι επιλεγμένο</strong>, τότε θα αγνοηθούν οι παραλλαγές στο XML Feed που θα παραγει το Plugin και θα διατήθεται μόνο η προκαθορισμένη του παραλλαγή </li>
+                                                        <li><strong>Αν δεν είναι επιλεγμένο</strong>, τότε όλες οι παραλλαγές του προϊόντος θα περαστούν σαν μοναδικές καταχωρήσεις-προϊόντα στο XML Feed</li>
+                                                    </ul>
+                                                </li><!-- End of Disable Variations Description -->
+                                                <li class="list-group-item"><h6>Use in Feeds</h6>
+                                                    <p>
+                                                        Στα συγκεκριμένα checkboxes επιλέγουμε σε ποιον πάροχο προωθούμε αυτό το Field (πχ. σε περίπτωση που το χρησιμοποιεί μοναδικά ένας πάροχος κάποιο ιδιαίτερο tag ή επιθυμούμυ εμείς να ενημερώνουμε το XML του ενός για μία συγκεκριμένη πληροφορία)
+                                                    </p>
+                                                </li>
+                                            </ul>
                                         </div><!--//section-block-->
-                                        <div id="edit-fields" class="section-block">
+
+                                    </div><!--//section-block-->
+
+                                    <div id="edit-fields" class="section-block">
+                                        <div class="code-block">
+                                            <h5>Επεξεργασία πεδίων</h5>
+                                            <p>
+                                                Έχοντας κατανοήσει το πως λειτουργεί η δημιουργία ενός Field αντίστοιχα μπορούμε να
+                                                </p>
+                                            <ul>
+                                                <li>παραμετροποιήσουμε</li>
+                                                <li>αποθηκεύσουμε τις αλλαγές</li>
+                                                <li>διαγράψουμε</li>
+                                            </ul>
+                                            το κάθε δημιουργημένο field.
                                             
-                                        </div><!--//section-block-->
+                                            
+                                            <div class="screenshot-holder"><a href="assets/images/screenshots/editExistingFields.jpg" data-toggle="lightbox"><img class="img-responsive" src="assets/images/screenshots/editExistingFields.jpg" alt="screenshot" width="400px" /></a></div>
+                                                            <a href="assets/images/screenshots/editExistingFields.jpg" data-toggle="lightbox" class='btn btn-blue'>Click to zoom</a>
+                                            
+                                        </div><!--//code-block-->
                                     </div><!--//section-block-->
                                     
-                                    <div id="css" class="section-block">
-                                        <div class="code-block">
-                                            <h6>CSS Code Example</h6>
-                                            <pre><code class="language-css">/* ======= Base Styling ======= */
-body {
-    font-family: 'Open Sans', arial, sans-serif; 
-    color: #333; 
-    font-size: 16px; 
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
-}</code></pre>
-                                        </div><!--//code-block-->
+                                    
+                                    
+                                    
+                                    <div id="Messages" class="section-block">
+                                        <h4>Messages</h4>
+                                        <p>
+                                            Στην περιοχή messages υπάρχουν δύο επιλογές (όπως φαίνεται στην παρακάτω εικόνα). Αφορούν τα μηνύματα που περνάμε για προϊόντα που <strong>δεν</strong> έχουν άμεση διαθεσιμότητα.
+                                        </p>
+                                        <div class="screenshot-holder"><img class="img-responsive" src="assets/images/screenshots/messagesScreenshot.jpg" alt="screenshot"/></div>
+                                            <ul>
+                                                <li>
+                                                    Στο πεδίο <strong>Backorder</strong> καταχωρούμε το μήνυμα που θέλουμε να εμφανίζεται όταν ένα προϊόν το φέρνουμε κατόπιν παραγγελίας.
+                                                </li>
+                                                <li>
+                                                    Στο πεδίο <strong>Out of Stock</strong> καταχωρούμε το μήνυμα που θέλουμε να εμφανίζεται όταν ένα προϊόν έχει εξαντληθεί και θέλουμε να ενημερώσουμε τον πελάτη για έναν εκτιμόμενο χρόνο παράδοσης.
+                                                </li>
+                                            </ul>
+                                            <p>Κατόπιν παραμετροποίησής τους πατάμε <strong>Save Changes</strong></p>
                                     </div><!--//section-block-->
-                                    <div id="less" class="section-block">
-                                        <div class="code-block">
-                                            <h6>LESS Code Example</h6>
-                                            <pre><code class="language-css">/*
-* Template Name: prettyDocs - Responsive Website Template for documentations 
-* Version: 1.0 
-* Author: Xiaoying Riley 
-* License: Creative Commons Attribution 3.0 License 
-* Twitter: @3rdwave_themes 
-* Website: http://themes.3rdwavemedia.com/ 
-*/ 
-@import &quot;mixins.less&quot;; 
-@import &quot;theme-default.less&quot;; 
-@import &quot;base.less&quot;; 
-@import &quot;doc.less&quot;; 
-@import &quot;landing.less&quot;; 
-@import &quot;responsive.less&quot;;</code></pre>
-                                        </div><!--//code-block-->
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div id="settings" class="section-block">
+                                        <h4>Settings</h4>
+                                        <p>
+                                            Στην περιοχή settings υπάρχουν τέσσερις επιλογές που πρέπει να ορίσουμε (όπως φαίνεται στην παρακάτω εικόνα):  
+                                        </p>
+                                        <div class="screenshot-holder"><img class="img-responsive" src="assets/images/screenshots/settingsScreenshot.jpg" alt="screenshot"/><br></div>
+                                        
+                                        <ul>
+                                            <li><strong>Get Product Image From:</strong> Σε αυτήν την επιλογή δηλώνουμε αν θέλουμε το XML να παρέχει link της εικόνας του προϊόντος από την Προβαλλόμενη Εικόνα (Featured Image) ή από την Product Gallery του WooCommerce.<br></li>
+                                            <li><strong>Default Product Image URL:</strong>Εδώ καταχωρούμε <em>(εφόσον υπάρχει)</em> τον σύνδεσμο της εικόνας που θα συνοδεύει το xml, για το προϊόντα που δέν διαθέτουν εικόνες<br></li>
+                                            <li><strong>Include Product Categories:</strong> Εδώ έχουμε την δυνατότητα πολλαπλής επιλογής κατηγοριών προϊόντων που θέλουμε να περιλαμβάνονται στο XML ή εναλλακτικά επίλέγουμε το --ALL-- για να περιλαμβάνονται όλες οι κατηγορίες στο XML Feed <br></li>
+                                            <li><strong>Feed Generation:</strong>
+                                                <ul>
+                                                    <li><strong>Manual: </strong>Αν θέλουμε να στέλνουμε το ανανεωμένο XML κατά βούληση (δηλαδή όταν έχουμε ολοκληρώσει ένα σύνολο αλλαγών) χρησιμοποιούμε την επιλογή Manual.<br>Κατ' επέκταση για
+                                                        να αποσταλεί το Feed θα πάμε στην καρτέλα Update Feed και θα πατήσουμε Run update proccess</li>
+                                                    <li><strong>Automatic: </strong>Αν θέλουμε το XML Feed να ανανεώνεται αυτόματα (on Request)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="callout-block callout-warning">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-warning"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h4 class="callout-title">Feed Generation Server Stress</h4>
+                                                <p>Ανάλογα με τον αριθμό των προϊόντων ενός e-shop καθορίζονται οι πόροι <em>(δηλαδή η ταχύτητα)</em> που μπορεί ο server να παράγει ένα XML αρχείο. Σε έναν μεγάλο όγκο προϊόντων αποφεύγουμε το <strong>Automatic Feed Generation</strong> γιατί μπορεί να δημιουργήσει μεγάλες καθυστερίσεις στην λειτουργία της ιστοσελίδας.
+                                                Σε αυτές τις περιπτώσεις επιλέγουμε <strong>Manual Feed Generation</strong> και πραγματοποιούμε το Update proccess κατά βούληση (ιδανικα ώρες που το site δεν έχει υψηλή επισκεψιμότητα)</p>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->
+                                        <p>Τέλος πατάμε <strong>Save Settings</strong></p>
                                     </div><!--//section-block-->
-                                    <div id="sass" class="section-block">
-                                        <div class="code-block">
-                                            <h6>Sass Code Example</h6>
-                                            <pre><code class="language-sass">#main {
-    $width: 5em; 
-    width: $width; 
-}
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div id="updateFeeds" class="section-block">
+                                        <h4>Update Feeds</h4>
+                                        <p>Την συγκεκριμένη καρτέλα την επισκεπτόμαστε μόνο όταν θέλουμενα παράγουμε το ανανεωμένο Feed Προϊόντων σε Skroutz και BestPrice.<br>
+                                        Πατάμε <strong>Run update proccess</strong> και το ανανεομένο feed δημιουργείται 
+                                        </p>
+                                        <div class="row">
+                                        <div class="col-md-12">
+                                        <div class="callout-block callout-success">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-thumbs-up"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h4 class="callout-title">Είμαστε έτοιμοι!</h4>
+                                                <p>Συγχαρητήρια! Φτάνωτας έως καταφέρατε να προετοιμάσετε την ιστοσελίδα σας για να συνδεθεί επίσημα με τους παρόχους BestPrice και Skroutz<br>
+                                                    <em>Παρακάτω θα δούμε λίγες ακόμη <strong>τελευταίες εύκολες λεπτομέρειες</strong> </em></p>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->    
+                                        </div>
+                                        </div>
+                                    </div><!--//section-block-->
+                                    
 
-#sidebar { 
-    width: $width; 
-}</code></pre>
-                                        </div><!--//code-block-->
-                                    </div><!--//section-block-->
-                                    <div id="javascript" class="section-block">
-                                        <div class="code-block">
-                                            <h6>JavaScript Code Example</h6>
-                                            <pre><code class="language-javascript">&lt;script&gt; 
-    function myFunction(a, b) { 
-        return a * b; 
-    } 
-    
-    document.getElementById(&quot;demo&quot;).innerHTML = myFunction(4, 3); 
-&lt;/script&gt;</code></pre>
-                                        </div><!--//code-block-->
-                                    </div><!--//section-block-->
-                                    <div id="python" class="section-block">
-                                        <div class="code-block">
-                                            <h6>Python Code Example</h6>
-                                            <pre><code class="language-python">&gt;&gt;&gt; x = int(input(&quot;
-Please enter an integer: &quot;)) Please enter an integer: 42 
-&gt;&gt;&gt; if x &lt; 0: 
-... x = 0 
-... print('Negative changed to zero') 
-... elif x == 0: 
-... print('Zero') 
-... elif x == 1: 
-... print('Single') 
-... else: 
-... print('More') 
-... More</code></pre>
-                                        </div><!--//code-block-->
-                                    </div><!--//section-block-->
-                                    <div id="php" class="section-block">
-                                        <div class="code-block">
-                                            <h6>PHP Code Example</h6>
-                                            <pre><code class="language-php">&lt;?php 
-$txt = &quot;Hello world!&quot;; 
-$x = 5; 
-$y = 10.5; 
-
-echo $txt; 
-echo &quot;&lt;br&gt;&quot;; 
-echo $x; 
-echo &quot;&lt;br&gt;&quot;; 
-echo $y; 
-?&gt;</code></pre>
-                                        </div><!--//code-block-->
-                                    </div><!--//section-block-->
-                                    <div id="handlebars" class="section-block">
-                                        <div class="code-block">
-                                            <h6>Handlebars Code Example</h6>
-                                            <pre><code class="language-handlebars">Handlebars.registerHelper('list', function(items, options) { 
-  var out = &quot;&lt;ul&gt;&quot;; 
-  
-  for(var i=0, l=items.length; i&lt;l; i++) { 
-    out = out + &quot;&lt;li&gt;&quot; + options.fn(items[i]) + &quot;&lt;/li&gt;&quot;; 
-  } 
-  
-  return out + &quot;&lt;/ul&gt;&quot;; 
-});</code></pre>
-                                        </div><!--//code-block-->
-                                        <div class="code-block">
-                                            <h6>Git Code Example</h6>
-                                            <pre><code class="language-git">$ git add Documentation.txt</code></pre>
-                                        </div><!--//code-block-->
-                                    </div><!--//section-block-->
+                                    
                                 </section><!--//doc-section-->
-                                <section id="callouts-section" class="doc-section">
-                                    <h2 class="section-title">Callouts</h2>
+                                <section id="ending" class="doc-section">
+                                    <h2 class="section-title">Τελειώνοντας</h2>
                                     <div class="section-block">
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
                                         </p>
@@ -496,19 +635,15 @@ echo $y;
                                             <li><a class="scrollto" href="#custom-feeds">Custom Feeds</a></li>
                                             <li><ul class="nav doc-sub-menu" style="padding-left:1em;">
                                                     <li><a class="scrollto" href="#add-fields">Προσθήκη νέου πεδίου</a></li>
-                                                    <li><a class="scrollto" href="#edit-fields">Επεξεργασία υπαρχόντων πεδίων</a></li>
+                                                    <li><a class="scrollto" href="#edit-fields">Επεξεργασία πεδίων</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="scrollto" href="#css">CSS</a></li>
-                                            <li><a class="scrollto" href="#less">LESS</a></li>
-                                            <li><a class="scrollto" href="#sass">Sass</a></li>
-                                            <li><a class="scrollto" href="#javascript">JavaScript</a></li>
-                                            <li><a class="scrollto" href="#python">Python</a></li>
-                                            <li><a class="scrollto" href="#php">PHP</a></li>
-                                            <li><a class="scrollto" href="#handlebars">Handlebars</a></li>
+                                            <li><a class="scrollto" href="#Messages">Messages</a></li>
+                                            <li><a class="scrollto" href="#settings">Settings</a></li>
+                                            <li><a class="scrollto" href="#updateFeeds">Update Feeds</a></li>
                                         </ul><!--//nav-->
                                     </li>
-                                    <li><a class="scrollto" href="#callouts-section">Callouts</a></li>
+                                    <li><a class="scrollto" href="#ending">Τελειώνοντας</a></li>
                                     <li><a class="scrollto" href="#tables-section">Tables</a></li>
                                     <li><a class="scrollto" href="#buttons-section">Buttons</a></li>
                                     <li><a class="scrollto" href="#video-section">Video</a></li>
