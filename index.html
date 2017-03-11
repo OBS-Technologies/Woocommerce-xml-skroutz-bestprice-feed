@@ -54,7 +54,7 @@
                     </div><!--//doc-header-->
                     <div class="doc-body">
                         <div class="doc-content">
-                            <div class="content-inner"><!--//doc-section-->
+                            <div class="content-holder-inner"><!--//doc-section-->
                                 <section id="installation-section" class="doc-section">
                                     <h2 class="section-title">Εγκατάσταση</h2>
                                     <div id="step1"  class="section-block">
@@ -145,7 +145,7 @@
                                                     
                                                     <h6>WC Label</h6>
                                                     <p>
-                                                        <em>Στο συγκεκριμένο πεδίο ορίζεται τό όνομα του πεδίου όπως έχει οριστεί εντός του WooCommerce στο αντίστοιχο Custom Field ή Attribite.</em>
+                                                        <em>Στο συγκεκριμένο πεδίο ορίζεται τό όνομα του πεδίου όπως έχει οριστεί εντός του WooCommerce στο αντίστοιχο <a href="#custom-fields-explanation" class="scrollto">Custom Field<span style="color:red;">*</span></a> ή Attribite.</em>
                                                         </p>
                                                     <hr>
                                                     
@@ -154,7 +154,7 @@
                                                     
                                                     
                                                     <p>
-                                                    <strong>Παράδειγμα 1 με Custom Field:</strong> Αν ορίσουμε ένα Custom Field με το όνομα <strong>ISBN</strong> (δεδομένου ότι <strong>τα custom fields ορίζονται με λατινικούς χαρακτήρες</strong>) στο WC Label θα συμπληρώσουμε <strong>ISBN</strong>.
+                                                        <strong>Παράδειγμα 1 με <a href="#custom-fields-explanation" class="scrollto">Custom Field<span style="color:red;">*</span></a>:</strong> Αν ορίσουμε ένα Custom Field με το όνομα <strong>ISBN</strong> (δεδομένου ότι <strong>τα custom fields ορίζονται με λατινικούς χαρακτήρες</strong>) στο WC Label θα συμπληρώσουμε <strong>ISBN</strong>.
                                                     </p>
 
                                                     <div class="row">
@@ -403,7 +403,7 @@
                                         </p><br><br>
                                         <h6>2<sup>ον</sup> - Όταν θελήσουμε να εξαιρέσουμε κάποιο προϊόν από τα feed ισχύει το παρακατω:</h6>
                                         <ol>
-                                            <li><strong>Δημιουργούμε ή χρησιμοποιούμε</strong> ένα Custom Field με όνομα <samp>exclude_from_feed</samp> στην σελίδα επεξεργασίας του προϊόντος στο WooCommerce.</li>
+                                            <li><strong>Δημιουργούμε ή χρησιμοποιούμε</strong> ένα <a href="#custom-fields-explanation" class="scrollto">Custom Field<span style="color:red;">*</span></a> με όνομα <samp>exclude_from_feed</samp> στην σελίδα επεξεργασίας του προϊόντος στο WooCommerce.</li>
                                             <li>Σαν τιμή πεδίου βάζουμε το νούμερο <strong>1</strong></li>
                                             <li>Voi la! Στο επόμενο update του XML Feed το προϊόν <strong>ΔΕΝ</strong> θα συμπεριληφθεί!</li>
                                         </ol><br><br>
@@ -412,6 +412,20 @@
                                             <li>Για <strong>Ελληνικό</strong> feed, θα ενημερώσουμε τους παρόχους μετά το feed_skroutz και feed_bestprice αντίστοιχα, να συμπληρώσουν το <br><samp><strong style="word-break: keep-all;">&#63;lang=el</strong></samp></li>
                                             <li>Για <strong>Αγγλικό</strong> feed, θα ενημερώσουμε τους παρόχουμε μετά το feed_skroutz και feed_bestprice αντίστοιχα, να συμπληρώσουν το <br><samp><strong style="word-break: keep-all;">&#63;lang=eng</strong></samp></li>
                                         </ul>
+                                        <hr>
+                                        <div class="callout-block callout-info">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-info"></i>
+                                            </div><!--//icon-holder-->
+                                            <div id="custom-fields-explanation" class="content">
+                                            <h4 class="callout-title">* Bonus: Πώς εισάγουμε Custom Fields στα προϊόντα του Woo Commerce <br><small>(Ισχύει από την έκδοση 4 του WordPress)</small></h4><br>    
+                                            <ol>
+                                                <li>Ανοίγουμε την σελίδα επεξεργασίας ενός οποιουδήποτε προϊόντος<br></li>
+                                                <li>Πάνω δεξιά στην οθόνη <em>(κάτω από το όνομα χρήστη μας)</em> επιλέγουμε την αναδυόμενη καρτέλα <strong>"Επιλογές Οθόνης" (Screen Options)</strong><br></li>
+                                                <li><strong>Ενεργοποιούμε</strong> το checkbox <strong>"Προσαρμοσμένα πεδία" (Custom Fields)</strong><br></li>
+                                                <li>Κάτεβαίνουε στο κάτω μέρος της σελίδας και θα έχει εμφανιστεί μία καρτάλα δημιουργίας και παραμετροποίησης των Custom Fields<br></li>
+                                            </ol>
+                                        </div>
                                     </div>
 
                                 </section><!--//doc-section-->
