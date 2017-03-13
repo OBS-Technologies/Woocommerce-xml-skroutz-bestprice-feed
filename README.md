@@ -1,5 +1,6 @@
 # Woocommerce XML Skroutz-Bestprice Feed Docs
-by <a href="http://www.obstechnologies.com/">OBS Technologies</a>
+
+Created with :heart: by <a href="http://www.obstechnologies.com/">OBS Technologies</a>
 
 <p>Το παρόν εγχειρίδιο ανοίκει στο προϊόν 
 <a href="http://www.obstechnologies.com/shop/wp-woocommerce-xml-feed-%CE%B3%CE%B9%CE%B1-skroutz-gr-%CE%BA%CE%B1%CE%B9-bestprice-gr/"><strong>WP Woocommerce XML Feed για Skroutz.gr και bestprice.gr</strong></a>
